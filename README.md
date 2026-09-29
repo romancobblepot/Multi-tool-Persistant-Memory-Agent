@@ -1,6 +1,6 @@
 While learning about building agents, i used to read about new concepts and implement them in this running project of mine. There may be a bit of sub-optimal decisions taken up at various points while building it but i found this practice really helpful to grasp ideas of complex things such as memory management, async/sync flows, Tool calling, Routing flows and HITL (Human in the Loop). Here's a detailed description of this application:
 
-# Multi-Tool Persistent Memory Chatbot
+# Multi-Tool Persistent Memory Agent
 
 A Streamlit chatbot built with LangGraph that combines persistent conversational state, semantic long-term memory, Corrective RAG (C-RAG), web search, and MCP tools (as of currently)
 
