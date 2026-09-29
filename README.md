@@ -177,6 +177,4 @@ __pycache__/
 - Retrieval quality monitoring, caching, retries, and rate/cost controls.
 - A remote/containerised Manim service for cloud deployment.
 
-## Security
-
-Never commit API keys, Supabase credentials, local `.env` files, generated media, or virtual environments. If a secret was ever committed, rotate it in its provider dashboard before continuing.
+Thankyou for reading if you've reached here :)
