@@ -4,13 +4,16 @@ from langchain_core.tools import BaseTool, tool
 from langchain_mcp_adapters.client import MultiServerMCPClient
 from runtime import run_async
 
+PROJECT_ROOT = Path(__file__).resolve().parents[1]
+MANIM_SERVER = PROJECT_ROOT / "manim-mcp-server" / "src" / "manim_server.py"
+
 client = MultiServerMCPClient({
     "expense": {"transport": "streamable_http", "url": "https://splendid-gold-dingo.fastmcp.app/mcp"},
     "manim-server": {
         "transport": "stdio",
-        "command": "/Users/adnaniqbalkantroo/Langgraph-Agents-tutorial/.venv/bin/python",
-        "args": ["/Users/adnaniqbalkantroo/Langgraph-Agents-tutorial/manim-mcp-server/src/manim_server.py"],
-        "env": {"MANIM_EXECUTABLE": "/Users/adnaniqbalkantroo/Langgraph-Agents-tutorial/.venv/bin/manim"},
+        "command": os.environ.get("PYTHON_EXECUTABLE", "python"),
+        "args": [str(MANIM_SERVER)],
+        "env": {"MANIM_EXECUTABLE": os.environ.get("MANIM_EXECUTABLE", "manim")},
     },
     "tavily-remote-mcp": {
         "transport": "streamable_http",
