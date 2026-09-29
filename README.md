@@ -1,6 +1,8 @@
 # Multi-Tool Persistent Memory Chatbot
 
-A Streamlit chatbot built with LangGraph that combines persistent conversational state, semantic long-term memory, Corrective RAG (C-RAG), web search, and MCP tools.
+While learning building agents, i used to learn about new things and implement them in this running project of mine. There may be a bit of sub-optimal decisions taken up at various points while building it but i found this practice really helpful to grasp idea of complex things such as memory management, async/sync flows and HITl (Human in the Loop). Here's a detailed description of this application:
+
+A Streamlit chatbot built with LangGraph that combines persistent conversational state, semantic long-term memory, Corrective RAG (C-RAG), web search, and MCP tools (as of currently)
 
 It supports multiple pre-auth user profiles, persistent named conversations, per-thread PDF question answering, tool-use streaming, and a human-in-the-loop fallback when a document is unavailable.
 
