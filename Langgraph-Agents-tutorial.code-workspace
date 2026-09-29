@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../RAG Chatbot"
+		},
+		{
+			"path": "../Context Engg"
+		}
+	],
+	"settings": {}
+}

@@ -1,0 +1,10 @@
+.env
+.venv/
+__pycache__/
+*.py[cod]
+*.db
+.DS_Store
+manim-mcp-server/.venv/
+manim-mcp-server/media/
+manim-mcp-server/__pycache__/
+media/
